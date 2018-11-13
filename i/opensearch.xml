@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+    <ShortName>AppAgg</ShortName>
+    <Description>This extension installs AppAgg's search engine in the browser and allows to search apps and developers directly form the search bar.</Description>
+    <Contact>appagg@appagg.com</Contact>
+    <Developer>AppAgg.com</Developer>
+    <Attribution>The Intellectual Property Rights over the results retrieved by using this extension, as well as the distinctive signs &amp; trademarks included in it belongs to queried website owners. By using this extension you agree on the Terms Of Service of the queried website.</Attribution>
+    <SyndicationRight>open</SyndicationRight>
+    <AdultContent>false</AdultContent>
+    <Language>*</Language>
+    <Tags>apps, developers, discounts, android, ios, windows, macos, linux, windows phone, google play, app store, windows store</Tags>
+    <InputEncoding>UTF-8</InputEncoding>
+    <OutputEncoding>UTF-8</OutputEncoding>
+    <Image height="16" width="16" type="image/x-icon">https://appagg.com/favicon.ico</Image>
+    <Image height="32" width="32" type="image/png">https://appagg.com/favicon5.png</Image>
+    <Query role="example" searchTerms="Skype" />
+    <Url type="text/html" method="get" template="https://appagg.com/search/?q={searchTerms}" />
+    <Url type="application/opensearchdescription+xml" rel="self" template="https://appagg.com/opensearch.xml"/>
+</OpenSearchDescription>
