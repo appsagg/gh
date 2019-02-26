@@ -1,6 +1,17 @@
-// Russian
-(function() {
+(function (factory) {
+  if (typeof define === 'function' && define.amd) {
+    define(['jquery'], factory);
+  } else if (typeof module === 'object' && typeof module.exports === 'object') {
+    factory(require('jquery'));
+  } else {
+    factory(jQuery);
+  }
+}(function (jQuery) {
+  // Russian
   function numpf(n, f, s, t) {
+    // f - 1, 21, 31, ...
+    // s - 2-4, 22-24, 32-34 ...
+    // t - 5-20, 25-30, ...
     n = n % 100;
     var n10 = n % 10;
     if ( (n10 === 1) && ( (n === 1) || (n > 20) ) ) {
@@ -29,4 +40,4 @@
     year: "год",
     years: function(value) { return numpf(value, "%d год", "%d года", "%d лет"); }
   };
-})();
+}));
