@@ -2,7 +2,7 @@
   "short_name": "AppAgg",
   "name": "AppAgg",
   "start_url": "https://appagg.com/",
-  "scope": "/",
+  "scope": "https://appagg.com/",
   "display": "browser",
   "icons": [
     {
